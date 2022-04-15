@@ -2,6 +2,14 @@
 
 Add some git information on `File` fields from latest commit: date, author and email.
 
+This is a fork of 
+
+* https://github.com/kraynel/gatsby-transformer-gitinfo - for gatsby 2
+* https://github.com/tcollart/gatsby-transformer-gitinfo - for gatsby 4
+
+I did not add anything new after tcollarts version.
+
+
 ## Install
 
 `npm install --save gatsby-transformer-gitinfo`
