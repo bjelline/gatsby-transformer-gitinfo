@@ -28,6 +28,7 @@ async function getLogWithRetry(gitRepo, node, retry = 2) {
     },
   };
   const log = await gitRepo.log(logOptions);
+  console.log("gatsby-transformer-gitinfo: getLogWithRetry(", gitRepo, node, retry, ")=", log);
   if (!log.latest && retry > 0) {
     return getLogWithRetry(gitRepo, node, retry - 1);
   }
